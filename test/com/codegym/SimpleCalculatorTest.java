@@ -95,4 +95,14 @@ public class SimpleCalculatorTest {
         int result = SimpleCalculator.sub(first, second);
         assertEquals(expected, result);
     }
+    @Test
+    @DisplayName("Testing sub MAX_VALUE - 1")
+    public void testSubMaxIntAnd1() {
+        int first = Integer.MAX_VALUE;
+        int second = 1;
+        int expected = Integer.MAX_VALUE-1;
+
+        int result = SimpleCalculator.sub(first, second);
+        assertEquals(expected, result);
+    }
 }
